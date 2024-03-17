@@ -13,6 +13,8 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --from-rgb: 96, 165, 250;
+    --to-rgb: 29, 78, 216;
   }
 }
 
@@ -30,4 +32,19 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+.gradient {
+  color: linear-gradient(to right, rgb(var(--from-rgb)), rgb(var(--to-rgb)));
+  background-clip: text;
+}
+
+.gradient_text {
+  @apply hover:text-blue-500 transition-colors duration-300 ease-in-out hover:scale-110;
 }
