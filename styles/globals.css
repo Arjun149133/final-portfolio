@@ -46,5 +46,5 @@ body {
 }
 
 .gradient_text {
-  @apply hover:text-blue-500 transition-colors duration-300 ease-in-out hover:scale-110;
+  @apply hover:text-blue-500 transition-colors duration-300 ease-in-out hover:scale-110 text-white;
 }

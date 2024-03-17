@@ -36,12 +36,12 @@ const SmallNav = ({ toggleAnimation, isAnimationPaused }: HeroSectionProps) => {
         </div>
         <div className=" gradient_text">
           <a href="#home">
-            <HomeIcon className=" w-10 h-7 " />
+            <HomeIcon className=" w-10 h-7 text-white " />
           </a>
         </div>
         <div className=" gradient_text">
           <a href="#about">
-            <UserIcon className=" w-10 h-7" />
+            <UserIcon className=" w-10 h-7 text-white" />
           </a>
         </div>
         <div className=" gradient_text">
@@ -57,12 +57,12 @@ const SmallNav = ({ toggleAnimation, isAnimationPaused }: HeroSectionProps) => {
         </div>
         <div className="gradient_text hover:text-yellow-300">
           <a href="#projects">
-            <SparklesIcon className=" w-10 h-7" />
+            <SparklesIcon className=" w-10 h-7 text-white" />
           </a>
         </div>
         <div className=" gradient_text">
           <a href="#home">
-            <DevicePhoneMobileIcon className=" w-10 h-7" />
+            <DevicePhoneMobileIcon className=" w-10 h-7 text-white" />
           </a>
         </div>
       </div>

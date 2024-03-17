@@ -24,14 +24,14 @@ const About = () => {
             alt="arjun"
             width={250}
             height={500}
-            className=" rounded-full h-60 w-60 object-cover"
+            className=" rounded-full h-32 w-32 lg:h-60 lg:w-60 object-contain"
           />
           <Image
             src="/pfp.png"
             alt="arjun"
             width={250}
             height={500}
-            className=" rounded-full h-60 w-60 object-cover absolute lg:translate-x-3 duration-500 ease-in-out cursor-pointer lg:-translate-y-3 lg:hover:translate-y-0 lg:hover:translate-x-0"
+            className=" rounded-full h-32 w-32 lg:h-60 lg:w-60 object-contain absolute lg:translate-x-3 duration-500 ease-in-out cursor-pointer lg:-translate-y-3 lg:hover:translate-y-0 lg:hover:translate-x-0"
           />
         </motion.div>
         <motion.div
@@ -44,8 +44,8 @@ const About = () => {
           <div className=" flex m-2 ml-12">
             <Card />
           </div>
-          <div className=" rounded-xl bg-transparent p-2 lg:p-4 m-2">
-            <p className=" leading-2 text-sm lg:text-lg flex-wrap p-7">
+          <div className=" rounded-xl p-2 lg:p-4 m-2">
+            <p className=" leading-2 text-sm lg:text-lg flex-wrap p-7 text-white">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad sequi
               nobis architecto nihil laboriosam aliquid culpa enim harum
               pariatur explicabo beatae, error illo fugiat fugit quae dolor quis
