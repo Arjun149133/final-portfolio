@@ -13,13 +13,14 @@ const SkillIcon = ({ src, text, props }: SkillIconProps) => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.25 }}
       viewport={{ once: true }}
+      className=" flex items-center justify-center flex-col"
     >
       <Image
         src={src}
         alt={text}
         width={50}
         height={50}
-        className={` h-12 w-12 rounded-sm text-white ${props}`}
+        className={` lg:h-12 lg:w-12 h-10 w-10 rounded-sm text-white ${props}`}
       />
       <p className=" mt-1 font-sans text-white">{text}</p>
     </motion.div>

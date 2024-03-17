@@ -39,7 +39,7 @@ const Navbar = ({ toggleAnimation, isAnimationPaused }: HeroSectionProps) => {
           <a href="#about">About</a>
         </div>
         <div className="gradient_text">
-          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
         </div>
         <div className="gradient_text">
           <a href="#projects">Projects</a>

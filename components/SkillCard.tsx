@@ -3,7 +3,7 @@ import SkillIcon from "./SkillIcon";
 
 const SkillCard = () => {
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 m-auto gap-10 p-4 lg:gap-y-20 place-items-center">
+    <div className="grid grid-cols-2 lg:grid-cols-4 m-auto gap-10 lg:p-4 p-1 lg:gap-y-20 place-items-center">
       <SkillIcon src="/css.svg" text="CSS" />
       <SkillIcon src="/tailwind.svg" text="Tailwind" />
       <SkillIcon src="/react.svg" text="React" />
