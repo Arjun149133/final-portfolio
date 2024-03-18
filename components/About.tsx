@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section id="about" className="max-h-screen lg:min-h-screen">
+    <section
+      id="about"
+      className="max-h-screen lg:min-h-screen overflow-hidden"
+    >
       <motion.div
         initial={{ opacity: 0, scale: 0.2 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -29,18 +32,18 @@ const About = () => {
             alt="arjun"
             width={250}
             height={500}
-            className=" rounded-full h-32 w-32 lg:h-60 lg:w-60 object-contain"
+            className=" rounded-full h-32 w-32 lg:h-60 lg:w-60 object-contain "
           />
           <Image
             src="/pfp.png"
             alt="arjun"
             width={250}
             height={500}
-            className=" rounded-full h-32 w-32 lg:h-60 lg:w-60 object-contain absolute lg:translate-x-3 duration-500 ease-in-out cursor-pointer lg:-translate-y-3 lg:hover:translate-y-0 lg:hover:translate-x-0"
+            className=" rounded-full h-32 w-32 lg:h-60 lg:w-60 object-contain absolute lg:translate-x-3 duration-500 ease-in-out cursor-pointer lg:-translate-y-3 lg:hover:translate-y-0 lg:hover:translate-x-0 border-white border-2"
           />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.25 }}
           viewport={{ once: true }}
