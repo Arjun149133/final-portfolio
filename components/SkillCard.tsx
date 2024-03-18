@@ -14,9 +14,9 @@ const SkillCard = () => {
       <SkillIcon src="/ts.svg" text="TypeScript" />
       <SkillIcon src="/mongo.svg" text="MongoDB" />
       <SkillIcon src="/prisma.svg" text="Prisma" />
-      <SkillIcon src="/redux.svg" text="Redux" />
+      <SkillIcon src="/redux.png" text="Redux" />
       <SkillIcon src="/git.svg" text="Git" />
-      <SkillIcon src="/sql.png" text="SQL" />
+      <SkillIcon src="/sql1.png" text="SQL" />
     </div>
   );
 };

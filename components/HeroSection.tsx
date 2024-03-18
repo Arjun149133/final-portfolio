@@ -38,14 +38,14 @@ const HeroSection = () => {
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-6 bg-gradient-to-r from-purple-400 to-purple-700 hover:bg-gradient-to-r hover:from-slate-800 hover:to-slate-700 text-white hover:text-purple-500 ">
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="#" rel="noreferrer">
                 Download Resume
               </a>
             </button>
 
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-purple-700 via-purple-500 to-pink-500 hover:bg-slate-800 text-white hover:text-purple-500 mt-3">
               <span className="block bg-[#000000] hover:bg-slate-800 rounded-full px-5 py-2">
-                <a href="https://linktr.ee/Diyavj" rel="noreferrer">
+                <a href="#" rel="noreferrer">
                   Let's Connect!
                 </a>
               </span>
