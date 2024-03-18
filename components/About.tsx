@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Card from "./Card";
 import { motion } from "framer-motion";
+import { Laila, Armata } from "next/font/google";
+
+const laila = Laila({ weight: "500", subsets: ["latin"] });
+
+const armata = Armata({ weight: "400", subsets: ["latin"] });
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="max-h-screen lg:min-h-screen overflow-hidden"
-    >
+    <section id="about" className="min-h-screen overflow-hidden">
       <motion.div
         initial={{ opacity: 0, scale: 0.2 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -25,7 +27,7 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.25 }}
           viewport={{ once: true }}
-          className=" flex justify-center mx-5 lg:w-1/3 relative"
+          className=" flex justify-center mx-5 lg:w-1/3 relative items-center"
         >
           <Image
             src="/screen.svg"
@@ -49,19 +51,40 @@ const About = () => {
           viewport={{ once: true }}
           className=" flex flex-col justify-center lg:w-2/3 lg:p-6"
         >
-          <div className=" flex m-2 ml-12">
+          {/* <div className=" flex m-2 ml-12">
             <Card />
-          </div>
-          <div className=" rounded-xl lg:p-4 m-1 my-5">
-            <p className=" leading-1 text-sm lg:text-lg flex-wrap p-1 lg:p-7 text-white">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad sequi
-              nobis architecto nihil laboriosam aliquid culpa enim harum
-              pariatur explicabo beatae, error illo fugiat fugit quae dolor quis
-              repudiandae soluta?
+          </div> */}
+          <div className=" rounded-xl lg:p-4 m-1 max-md:my-5 max-md:text-center">
+            <div className=" mb-2 lg:ml-7 lg:text-2xl font-bold">
+              <h1>I CREATE</h1>
+              <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-sky-700">
+                WEBSITES
+              </h1>
+              <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-sky-700">
+                TAILORED FOR
+              </h1>
+              <h1>YOUR SUCCESS</h1>
+            </div>
+            <p
+              className={`text-sm lg:text-lg flex-wrap p-1 lg:p-7 text-white leading-relaxed ${laila.className}`}
+            >
+              With a strong foundation in web fundamentals, I specialize in
+              crafting bespoke sites that attract customers and empower small
+              businesses. Let's work together to elevate your online presence
+              and bring your vision to life.
             </p>
+          </div>
+          <div className=" max-md:text-center mb-2 lg:ml-10 ">
+            <a
+              href="#contact"
+              className=" bg-sky-600 p-2 lg:p-4 rounded-full px-4 hover:bg-sky-500 font-bold"
+            >
+              Get In Touch!
+            </a>
           </div>
         </motion.div>
       </div>
+      <div className=" h-1 bg-white mt-12 opacity-50 rounded-full mx-1" />
     </section>
   );
 };
