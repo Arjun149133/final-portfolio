@@ -7,6 +7,7 @@ import SmallNav from "@components/SmallNav";
 import About from "@components/About";
 import Signature from "@components/Signature";
 import Skills from "@components/Skills";
+import Projects from "@components/Projects";
 
 export default function Home() {
   const [isAnimationPaused, setIsAnimationPaused] = useState(true);
@@ -26,6 +27,7 @@ export default function Home() {
         <HeroSection />
         <About />
         <Skills />
+        <Projects />
       </div>
       <SmallNav
         toggleAnimation={toggleAnimation}

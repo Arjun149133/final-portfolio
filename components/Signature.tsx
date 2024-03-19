@@ -1,7 +1,7 @@
 import Image from "next/image";
 const Signature = () => {
   return (
-    <div className="sticky top-0 z-50 max-sm:opacity-60">
+    <div className="z-50 max-sm:opacity-60">
       <div className=" absolute top-2 lg:left-20">
         <Image
           src="/arj.svg"

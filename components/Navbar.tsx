@@ -13,7 +13,7 @@ const Navbar = ({ toggleAnimation, isAnimationPaused }: HeroSectionProps) => {
         initial={{ opacity: 0, x: 200 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.25 }}
-        className="bg-transparent bg-gradient-to-r from-gray-800 to-gray-900 rounded-l-full p-4"
+        className="bg-transparent backdrop-blur-xl bg-gray-500 rounded-l-full p-4"
       >
         <div className=" flex gap-10 mr-60 text-lg ml-10">
           <div className=" flex items-center">
