@@ -57,7 +57,8 @@ const MyProjects = () => {
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
-      className=" flex max-lg:flex-col justify-between max-lg:items-center max-lg:justify-center max-lg:space-y-5 w-full p-1 lg:space-x-5"
+      viewport={{ once: true }}
+      className=" flex max-lg:flex-col justify-between max-lg:items-center max-lg:justify-center max-lg:space-y-5 w-full lg:space-x-5"
     >
       {data.map((project, index) => (
         <motion.div key={index} variants={childVariants}>
