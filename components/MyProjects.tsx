@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import { motion } from "framer-motion";
 
 const data = [
   {
@@ -28,12 +29,42 @@ const data = [
 ];
 
 const MyProjects = () => {
+  const cardVariants = {
+    hidden: { opacity: 0, scale: 0.5 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delay: 0.2,
+        staggerChildren: 0.5,
+        duration: 0.7,
+      },
+    },
+  };
+
+  const childVariants = {
+    hidden: { opacity: 0, scale: 0.5 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.7,
+      },
+    },
+  };
   return (
-    <div className=" flex max-lg:flex-col justify-between max-lg:items-center max-lg:space-y-5 w-full p-1">
+    <motion.div
+      variants={cardVariants}
+      initial="hidden"
+      whileInView="visible"
+      className=" flex max-lg:flex-col justify-between max-lg:items-center max-lg:justify-center max-lg:space-y-5 w-full p-1 lg:space-x-5"
+    >
       {data.map((project, index) => (
-        <ProjectCard key={index} {...project} />
+        <motion.div key={index} variants={childVariants}>
+          <ProjectCard {...project} />
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
