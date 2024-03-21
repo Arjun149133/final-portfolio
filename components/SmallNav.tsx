@@ -14,7 +14,7 @@ const SmallNav = ({ toggleAnimation, isAnimationPaused }: HeroSectionProps) => {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}
-      className=" lg:hidden sticky bottom-2 w-full flex justify-center z-50 "
+      className=" lg:hidden sticky top-2 w-full flex justify-center z-50 "
     >
       <div className=" flex gap-3 bg-transparent backdrop-blur-xl bg-gray-600 rounded-full p-1 w-auto">
         <div className=" flex items-center">

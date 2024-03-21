@@ -1,7 +1,7 @@
 import Image from "next/image";
 const Signature = ({ img }: { img: string }) => {
   return (
-    <div className="z-50 max-sm:opacity-60">
+    <div className=" hidden sm:inline z-50 max-sm:opacity-60">
       <div className=" absolute top-2 lg:left-20">
         <Image
           src={img}

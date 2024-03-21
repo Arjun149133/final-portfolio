@@ -6,7 +6,7 @@ const Projects = () => {
     <section id="projects" className=" min-h-screen mt-5">
       <motion.div
         initial={{ opacity: 0, scale: 0.2 }}
-        animate={{ opacity: 1, scale: 1 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         className=" flex flex-col justify-center items-center mb-4  space-y-1"
       >

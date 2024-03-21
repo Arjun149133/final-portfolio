@@ -17,10 +17,14 @@ export default function Home() {
     setIsAnimationPaused(!isAnimationPaused);
   };
   return (
-    <main className="flex min-h-screen flex-col bg-[#000000] overflow-hidden">
+    <main className="flex min-h-screen flex-col bg-[#000000]">
       <StarsCanvas isPaused={isAnimationPaused} />
       <Signature img="/arj.svg" />
       <Navbar
+        toggleAnimation={toggleAnimation}
+        isAnimationPaused={isAnimationPaused}
+      />
+      <SmallNav
         toggleAnimation={toggleAnimation}
         isAnimationPaused={isAnimationPaused}
       />
@@ -31,10 +35,6 @@ export default function Home() {
         <Projects />
       </div>
       <Footer />
-      <SmallNav
-        toggleAnimation={toggleAnimation}
-        isAnimationPaused={isAnimationPaused}
-      />
     </main>
   );
 }
