@@ -24,7 +24,7 @@ export default function Home() {
         toggleAnimation={toggleAnimation}
         isAnimationPaused={isAnimationPaused}
       />
-      <div className="z-20 container mx-auto px-12 ">
+      <div className="z-20 container mx-auto sm:px-12 ">
         <HeroSection />
         <About />
         <Skills />

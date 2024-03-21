@@ -15,7 +15,7 @@ const Footer = () => {
           />
         </div>
         <div className=" px-4 lg:px-28 mt-5">
-          <div className=" flex justify-center space-x-10 text-gray-900 flex-wrap cursor-pointer">
+          <div className=" flex justify-center space-x-2 sm:space-x-10 text-gray-900 flex-wrap cursor-pointer">
             <a href="#home" className=" gradient_text">
               Home
             </a>
@@ -40,7 +40,7 @@ const Footer = () => {
                 alt="signature"
                 width={100}
                 height={100}
-                className=" h-10 cursor-pointer"
+                className=" h-7 sm:h-10 cursor-pointer"
               />
             </div>
             <div>
@@ -54,7 +54,7 @@ const Footer = () => {
                 alt="signature"
                 width={100}
                 height={100}
-                className=" h-10 cursor-pointer"
+                className=" h-7 sm:h-10  cursor-pointer"
               />
             </div>
             <div>
@@ -64,7 +64,7 @@ const Footer = () => {
                 alt="signature"
                 width={100}
                 height={100}
-                className=" h-10 cursor-pointer"
+                className=" h-7 sm:h-10  cursor-pointer"
               />
             </div>
           </div>
