@@ -17,14 +17,14 @@ export default function Home() {
     setIsAnimationPaused(!isAnimationPaused);
   };
   return (
-    <main className="flex min-h-screen flex-col bg-[#000000] relative">
+    <main className="flex min-h-screen flex-col bg-[#000000]">
       <StarsCanvas isPaused={isAnimationPaused} />
       <Signature img="/arj.svg" />
       <Navbar
         toggleAnimation={toggleAnimation}
         isAnimationPaused={isAnimationPaused}
       />
-      <div className="z-20 container mx-auto sm:px-12 ">
+      <div className="z-20 container mx-auto px-4 sm:px-12 ">
         <HeroSection />
         <About />
         <Skills />
