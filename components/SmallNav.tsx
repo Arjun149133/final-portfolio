@@ -61,7 +61,7 @@ const SmallNav = ({ toggleAnimation, isAnimationPaused }: HeroSectionProps) => {
           </a>
         </div>
         <div className=" gradient_text">
-          <a href="#home">
+          <a href="#contact">
             <DevicePhoneMobileIcon className=" w-10 h-6 text-white" />
           </a>
         </div>

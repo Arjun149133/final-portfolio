@@ -3,7 +3,7 @@ import Signature from "./Signature";
 
 const Footer = () => {
   return (
-    <section className=" min-h-screen flex flex-col justify-end z-50 ">
+    <section className=" min-h-screen flex flex-col justify-end z-40">
       <div className=" bg-white h-[467px]">
         <div className=" flex justify-center mt-7">
           <Image
@@ -15,7 +15,7 @@ const Footer = () => {
           />
         </div>
         <div className=" px-4 lg:px-28 mt-5">
-          <div className=" flex justify-center space-x-2 sm:space-x-10 text-gray-900 flex-wrap cursor-pointer">
+          <div className=" flex justify-center space-x-2 sm:space-x-10 text-gray-900 flex-wrap cursor-pointer max-sm:text-sm">
             <a href="#home" className=" gradient_text">
               Home
             </a>

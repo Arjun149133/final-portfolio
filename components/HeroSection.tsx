@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
@@ -42,14 +43,42 @@ const HeroSection = () => {
                 Download Resume
               </a>
             </button>
-
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-purple-700 via-purple-500 to-pink-500 hover:bg-slate-800 text-white hover:text-purple-500 mt-3">
-              <span className="block bg-[#000000] hover:bg-slate-800 rounded-full px-5 py-2">
-                <a href="#" rel="noreferrer">
-                  Let's Connect!
-                </a>
-              </span>
-            </button>
+          </div>
+          <div className=" flex justify-center items-center mt-7 space-x-4 lg:space-x-10 opacity-95">
+            <div>
+              <Image
+                onClick={() => window.open("https://github.com/Arjun149133")}
+                src="/github.svg"
+                alt="signature"
+                width={100}
+                height={100}
+                className=" h-7 sm:h-10 cursor-pointer bg-white w-fit rounded-2xl"
+              />
+            </div>
+            <div>
+              <Image
+                onClick={() =>
+                  window.open(
+                    "https://www.linkedin.com/in/arjun-yadav-4aa978261/"
+                  )
+                }
+                src="/linked.svg"
+                alt="signature"
+                width={100}
+                height={100}
+                className=" h-7 sm:h-10  cursor-pointer bg-white w-fit rounded-md"
+              />
+            </div>
+            <div>
+              <Image
+                onClick={() => window.open("https://twitter.com/AArjunY")}
+                src="/tweet.svg"
+                alt="signature"
+                width={100}
+                height={100}
+                className=" h-7 sm:h-10  cursor-pointer bg-white w-fit rounded-lg"
+              />
+            </div>
           </div>
         </motion.div>
       </div>

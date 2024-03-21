@@ -9,6 +9,7 @@ import Signature from "@components/Signature";
 import Skills from "@components/Skills";
 import Projects from "@components/Projects";
 import Footer from "@components/Footer";
+import Contact from "@components/Contact";
 
 export default function Home() {
   const [isAnimationPaused, setIsAnimationPaused] = useState(true);
@@ -33,6 +34,7 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
+        <Contact />
       </div>
       <Footer />
     </main>

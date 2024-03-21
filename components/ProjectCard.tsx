@@ -30,7 +30,7 @@ const ProjectCard = ({
       animate={isFlipped ? "flipped" : "unflipped"}
       variants={cardVariants}
       transition={{ duration: 1 }}
-      className=" bg-gradient-radial from-gray-700 to-gray-900 lg:m-1 rounded-sm rounded-t-xl space-y-2 w-full h-full pb-2 z-50"
+      className=" bg-gradient-radial from-gray-700 to-gray-900 lg:m-1 rounded-sm rounded-t-xl space-y-2 w-full h-full pb-2 z-50 border-2 border-gray-600 hover:border-gray-500"
     >
       {isFlipped ? (
         <>
@@ -47,12 +47,12 @@ const ProjectCard = ({
               height={400}
               className=" rounded-t-xl h-full w-full"
             />
-            <div className="absolute right-0 mt-2 mx-2 cursor-pointer z-50">
+            {/* <div className="absolute right-0 mt-2 mx-2 cursor-pointer z-50">
               <InformationCircleIcon
                 onClick={() => setIsFlipped(true)}
                 className=" h-7 text-white"
               />
-            </div>
+            </div> */}
           </div>
           <div className=" mx-2 font-bold text-sky-700 brightness-200">
             {title}
@@ -75,13 +75,14 @@ const ProjectCard = ({
             >
               Live Site
             </a>
-            <a
-              href={gitLink}
-              target="_blank"
-              className=" bg-sky-600 p-1 rounded-md px-2 text-sm lg:text-md hover:bg-sky-500 "
-            >
-              Git
-            </a>
+            <Image
+              src="/git.svg"
+              alt="github"
+              width={30}
+              height={30}
+              onClick={() => window.open(gitLink)}
+              className=" cursor-pointer text-white"
+            />
           </div>
         </>
       )}
