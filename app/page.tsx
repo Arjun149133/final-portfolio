@@ -8,6 +8,7 @@ import About from "@components/About";
 import Signature from "@components/Signature";
 import Skills from "@components/Skills";
 import Projects from "@components/Projects";
+import Footer from "@components/Footer";
 
 export default function Home() {
   const [isAnimationPaused, setIsAnimationPaused] = useState(true);
@@ -16,9 +17,9 @@ export default function Home() {
     setIsAnimationPaused(!isAnimationPaused);
   };
   return (
-    <main className="flex min-h-screen flex-col bg-[#000000]">
+    <main className="flex min-h-screen flex-col bg-[#000000] relative">
       <StarsCanvas isPaused={isAnimationPaused} />
-      <Signature />
+      <Signature img="/arj.svg" />
       <Navbar
         toggleAnimation={toggleAnimation}
         isAnimationPaused={isAnimationPaused}
@@ -29,6 +30,7 @@ export default function Home() {
         <Skills />
         <Projects />
       </div>
+      <Footer />
       <SmallNav
         toggleAnimation={toggleAnimation}
         isAnimationPaused={isAnimationPaused}

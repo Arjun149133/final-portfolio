@@ -16,7 +16,7 @@ const SmallNav = ({ toggleAnimation, isAnimationPaused }: HeroSectionProps) => {
       transition={{ duration: 1 }}
       className=" lg:hidden sticky bottom-2 w-full flex justify-center z-50 "
     >
-      <div className=" flex gap-3 bg-transparent backdrop-blur-xl bg-gray-500 rounded-full p-1 w-auto">
+      <div className=" flex gap-3 bg-transparent backdrop-blur-xl bg-gray-600 rounded-full p-1 w-auto">
         <div className=" flex items-center">
           <ReactSwitch
             onChange={toggleAnimation}

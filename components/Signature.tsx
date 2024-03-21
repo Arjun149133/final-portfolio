@@ -1,10 +1,10 @@
 import Image from "next/image";
-const Signature = () => {
+const Signature = ({ img }: { img: string }) => {
   return (
     <div className="z-50 max-sm:opacity-60">
       <div className=" absolute top-2 lg:left-20">
         <Image
-          src="/arj.svg"
+          src={img}
           alt="signature"
           width={100}
           height={100}
