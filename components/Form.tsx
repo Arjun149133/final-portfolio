@@ -5,7 +5,10 @@ import "react-toastify/dist/ReactToastify.css";
 const Form = () => {
   const [state, handleSubmit] = useForm("xjvnejop");
   return (
-    <form onSubmit={handleSubmit} className=" flex flex-col space-y-4">
+    <form
+      onSubmit={handleSubmit}
+      className=" flex flex-col space-y-4 text-slate-100"
+    >
       <div className=" flex flex-col justify-start w-full my-1 lg:text-lg">
         <label htmlFor="email">Your Email</label>
         <input
