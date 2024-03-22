@@ -3,7 +3,10 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <section id="contact" className=" max-h-screen">
+    <section
+      id="contact"
+      className=" max-h-screen flex flex-col justify-center items-center "
+    >
       <motion.div
         initial={{ opacity: 0, scale: 0.2 }}
         whileInView={{ opacity: 1, scale: 1 }}
