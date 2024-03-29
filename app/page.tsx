@@ -12,7 +12,7 @@ import Footer from "@components/Footer";
 import Contact from "@components/Contact";
 
 export default function Home() {
-  const [isAnimationPaused, setIsAnimationPaused] = useState(true);
+  const [isAnimationPaused, setIsAnimationPaused] = useState(false);
 
   const toggleAnimation = () => {
     setIsAnimationPaused(!isAnimationPaused);
