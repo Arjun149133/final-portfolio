@@ -6,7 +6,7 @@ const data = [
     img: "/twitterclone.png",
     desc: "A Twitter clone built using Next.js and Firebase. The application replicates many of the core features of Twitter, including user authentication, posting tweets, liking tweets, commenting on tweets. Users can sign up, log in. The application utilizes Firebase for real-time data synchronization, allowing users to see updates instantly.",
     title: "Twitter Clone",
-    tools: ["nextjs", "firebase", "tailwindcss"],
+    tools: ["Next.js", "Firebase", "Tailwind.css", "Recoil"],
     gitLink: "https://github.com/Arjun149133/twitter-clone",
     liveLink: "https://twitter-clone-psi-henna.vercel.app/",
   },
