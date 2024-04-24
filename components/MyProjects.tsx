@@ -3,6 +3,21 @@ import { motion } from "framer-motion";
 
 const data = [
   {
+    img: "/canvaclone.png",
+    desc: "A canva clone",
+    title: "Canva Clone",
+    tools: [
+      "Next.js",
+      "cloudinaryai",
+      "clerk",
+      "shadcn",
+      "Tailwind.css",
+      "Recoil",
+    ],
+    gitLink: "https://github.com/Arjun149133/Canva-Clone",
+    liveLink: "https://canva-dusky.vercel.app/",
+  },
+  {
     img: "/twitterclone.png",
     desc: "A Twitter clone built using Next.js and Firebase. The application replicates many of the core features of Twitter, including user authentication, posting tweets, liking tweets, commenting on tweets. Users can sign up, log in. The application utilizes Firebase for real-time data synchronization, allowing users to see updates instantly.",
     title: "Twitter Clone",
@@ -18,14 +33,14 @@ const data = [
     gitLink: "https://github.com/Arjun149133/ShopKart-vite",
     liveLink: "https://shopkart-arj.netlify.app/",
   },
-  {
-    img: "/promptopia.png",
-    desc: "Next.js-powered AI Prompt Sharing Platform. Leveraging MongoDB for its robust database capabilities and Google authentication with NextAuth for seamless user access, our platform offers a comprehensive CRUD (Create, Read, Update, Delete) experience. Each user enjoys a personalized profile page, providing a hub for managing and sharing their unique collection of prompts.Our platform boasts powerful search functionality, enabling users to explore prompts based on keywords, tags, or related terms.",
-    title: "Share AI Prompts",
-    tools: ["NextJs", "MongoDB", "tailwindcss", "NextAuth"],
-    gitLink: "https://github.com/Arjun149133/share_promts",
-    liveLink: "https://share-ai-prompts-nine.vercel.app/",
-  },
+  // {
+  //   img: "/promptopia.png",
+  //   desc: "Next.js-powered AI Prompt Sharing Platform. Leveraging MongoDB for its robust database capabilities and Google authentication with NextAuth for seamless user access, our platform offers a comprehensive CRUD (Create, Read, Update, Delete) experience. Each user enjoys a personalized profile page, providing a hub for managing and sharing their unique collection of prompts.Our platform boasts powerful search functionality, enabling users to explore prompts based on keywords, tags, or related terms.",
+  //   title: "Share AI Prompts",
+  //   tools: ["NextJs", "MongoDB", "tailwindcss", "NextAuth"],
+  //   gitLink: "https://github.com/Arjun149133/share_promts",
+  //   liveLink: "https://share-ai-prompts-nine.vercel.app/",
+  // },
 ];
 
 const MyProjects = () => {
