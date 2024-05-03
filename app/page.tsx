@@ -11,7 +11,7 @@ import Projects from "@components/Projects";
 import Footer from "@components/Footer";
 import Contact from "@components/Contact";
 
-//just a commit 6
+//just a commit 7
 export default function Home() {
   const [isAnimationPaused, setIsAnimationPaused] = useState(false);
 
