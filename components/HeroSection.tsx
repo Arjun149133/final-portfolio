@@ -41,7 +41,7 @@ const HeroSection = () => {
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-6 bg-gradient-to-r from-purple-400 to-purple-700 hover:bg-gradient-to-r hover:from-slate-800 hover:to-slate-700 text-white hover:text-purple-500 ">
               <a
                 href="/resume.pdf"
-                download="resume-arjun.pdf"
+                download="resume-arjun1.pdf"
                 rel="noreferrer"
               >
                 Download Resume
