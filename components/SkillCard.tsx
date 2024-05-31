@@ -18,6 +18,7 @@ const SkillCard = () => {
       <SkillIcon src="/redux.png" text="Redux" />
       <SkillIcon src="/git.svg" text="Git" />
       <SkillIcon src="/sql1.png" text="SQL" />
+      <SkillIcon src="/graphql.png" text="GraphQL" />
     </div>
   );
 };
