@@ -37,14 +37,14 @@ const ProjectCard = ({
           <div>{desc}</div>
         </>
       ) : (
-        <>
+        <div className=" flex flex-col justify-between h-full">
           <div className=" rounded-t-xl relative">
             <Image
               src={img}
               quality={100}
               alt="Project"
               width={500}
-              height={400}
+              height={500}
               className=" rounded-t-xl h-full w-full"
             />
             {/* <div className="absolute right-0 mt-2 mx-2 cursor-pointer z-50">
@@ -84,7 +84,7 @@ const ProjectCard = ({
               className=" cursor-pointer text-white"
             />
           </div>
-        </>
+        </div>
       )}
     </motion.div>
   );

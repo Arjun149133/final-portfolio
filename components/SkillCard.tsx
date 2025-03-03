@@ -19,6 +19,9 @@ const SkillCard = () => {
       <SkillIcon src="/git.svg" text="Git" />
       <SkillIcon src="/sql1.png" text="SQL" />
       <SkillIcon src="/graphql.png" text="GraphQL" />
+      <SkillIcon src="/docker.svg" text="Docker" />
+      <SkillIcon src="/aws.svg" text="AWS" />
+      <SkillIcon src="/postgresql.svg" text="Postgres" />
     </div>
   );
 };

@@ -3,12 +3,36 @@ import { motion } from "framer-motion";
 
 const data = [
   {
-    img: "/canvaclone.png",
-    desc: "A canva clone",
-    title: "Canva Clone",
-    tools: ["Next.js", "cloudinaryai", "clerk", "shadcn"],
-    gitLink: "https://github.com/Arjun149133/Canva-Clone",
-    liveLink: "https://canva-dusky.vercel.app/",
+    img: "/chessProject.png",
+    desc: "A Chess.com Like application",
+    title: "Chess.com",
+    tools: [
+      "Next.js",
+      "TypeScript",
+      "WebSocket",
+      "bun",
+      "Docker",
+      "Postgres",
+      "aws",
+    ],
+    gitLink: "https://github.com/Arjun149133/chess-application",
+    liveLink: "https://chess.arjunyadav.website",
+  },
+  {
+    img: "/collabDraw.png",
+    desc: "An Excalidraw-like application that allows users to collaborate in real-time. Users can draw shapes, add text, and collaborate with others in real-time. The application utilizes WebSocket for real-time communication.",
+    title: "CollabDraw",
+    tools: [
+      "Next.js",
+      "TypeScript",
+      "WebSocket",
+      "node",
+      "Docker",
+      "Postgres",
+      "aws",
+    ],
+    gitLink: "https://github.com/Arjun149133/excalidraw-clone",
+    liveLink: "https://collabdraw.arjunyadav.website",
   },
   {
     img: "/twitterclone.png",
@@ -18,22 +42,6 @@ const data = [
     gitLink: "https://github.com/Arjun149133/twitter-clone",
     liveLink: "https://twitter-clone-psi-henna.vercel.app/",
   },
-  {
-    img: "/shopkart.png",
-    desc: "ShopCart is a modern online shopping cart application developed using ViteReact, Redux, and various other cutting-edge technologies. Users can browse through a wide range of products, easily add items to their cart, and proceed to checkout effortlessly. One of the standout features of ShopCart is its advanced filter search functionality. The application also includes essential features such as user authentication.",
-    title: "ShopCart",
-    tools: ["React", "Redux", "tailwindcss"],
-    gitLink: "https://github.com/Arjun149133/ShopKart-vite",
-    liveLink: "https://shopkart-arj.netlify.app/",
-  },
-  // {
-  //   img: "/promptopia.png",
-  //   desc: "Next.js-powered AI Prompt Sharing Platform. Leveraging MongoDB for its robust database capabilities and Google authentication with NextAuth for seamless user access, our platform offers a comprehensive CRUD (Create, Read, Update, Delete) experience. Each user enjoys a personalized profile page, providing a hub for managing and sharing their unique collection of prompts.Our platform boasts powerful search functionality, enabling users to explore prompts based on keywords, tags, or related terms.",
-  //   title: "Share AI Prompts",
-  //   tools: ["NextJs", "MongoDB", "tailwindcss", "NextAuth"],
-  //   gitLink: "https://github.com/Arjun149133/share_promts",
-  //   liveLink: "https://share-ai-prompts-nine.vercel.app/",
-  // },
 ];
 
 const MyProjects = () => {
